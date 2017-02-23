@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rX1-nP-wsK">
+                                <rect key="frame" x="75" y="274" width="225" height="119"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="WORDS">
+                                        <attributes>
+                                            <font key="NSFont" size="45" name="AvenirNext-UltraLight"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSP-zd-R8w">
+                                <rect key="frame" x="75" y="267" width="225" height="119"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="WORDS">
+                                        <attributes>
+                                            <font key="NSFont" size="45" name="AvenirNext-UltraLight"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3f-Ub-6aK">
+                                <rect key="frame" x="75" y="280" width="225" height="119"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="WORDS">
+                                        <attributes>
+                                            <font key="NSFont" size="45" name="AvenirNext-UltraLight"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="rX1-nP-wsK" secondAttribute="bottom" constant="274" id="8ll-Dj-0Ib"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="HSP-zd-R8w" secondAttribute="bottom" constant="281" id="M7O-Vh-qtn"/>
+                            <constraint firstItem="HSP-zd-R8w" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="OZ1-Wi-Fen"/>
+                            <constraint firstItem="HSP-zd-R8w" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="247" id="WzO-fR-OyA"/>
+                            <constraint firstItem="V3f-Ub-6aK" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="i2e-h6-O7J"/>
+                            <constraint firstItem="rX1-nP-wsK" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="254" id="mar-wF-c4S"/>
+                            <constraint firstItem="rX1-nP-wsK" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="nCy-rx-zew"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="V3f-Ub-6aK" secondAttribute="bottom" constant="268" id="quL-IQ-ZBs"/>
+                            <constraint firstItem="V3f-Ub-6aK" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="260" id="uEd-R2-YtB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+</document>

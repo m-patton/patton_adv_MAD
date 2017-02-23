@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>A</key>
+	<array>
+		<string>accretion</string>
+		<string>alacrity</string>
+	</array>
+	<key>C</key>
+	<array>
+		<string>casuistry</string>
+		<string>coruscate</string>
+	</array>
+	<key>E</key>
+	<array>
+		<string>effervescence</string>
+		<string>effulgence</string>
+	</array>
+	<key>I</key>
+	<array>
+		<string>insouciance</string>
+		<string>irascent</string>
+	</array>
+	<key>P</key>
+	<array>
+		<string>paromologia</string>
+		<string>pastiche</string>
+	</array>
+	<key>V</key>
+	<array>
+		<string>veriloquent</string>
+		<string>vulpine	</string>
+	</array>
+</dict>
+</plist>
