@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9347C75B1E6EA99300D4C7E2 /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9347C75A1E6EA99300D4C7E2 /* AddNoteViewController.swift */; };
 		93A973DB1E657A3C00CAB76F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A973DA1E657A3C00CAB76F /* AppDelegate.swift */; };
 		93A973DD1E657A3C00CAB76F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A973DC1E657A3C00CAB76F /* FirstViewController.swift */; };
 		93A973DF1E657A3C00CAB76F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A973DE1E657A3C00CAB76F /* SecondViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9347C75A1E6EA99300D4C7E2 /* AddNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
 		93A973D71E657A3C00CAB76F /* p1m2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = p1m2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A973DA1E657A3C00CAB76F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93A973DC1E657A3C00CAB76F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				93A973E01E657A3C00CAB76F /* Main.storyboard */,
 				93A973EE1E657BDA00CAB76F /* ThirdViewController.swift */,
 				93A973F01E65812700CAB76F /* testnotes.plist */,
+				9347C75A1E6EA99300D4C7E2 /* AddNoteViewController.swift */,
 				93A973E31E657A3C00CAB76F /* Assets.xcassets */,
 				93A973E51E657A3C00CAB76F /* LaunchScreen.storyboard */,
 				93A973E81E657A3C00CAB76F /* Info.plist */,
@@ -151,6 +154,7 @@
 			files = (
 				93A973DF1E657A3C00CAB76F /* SecondViewController.swift in Sources */,
 				93A973F31E6581F000CAB76F /* Notes.swift in Sources */,
+				9347C75B1E6EA99300D4C7E2 /* AddNoteViewController.swift in Sources */,
 				93A973DB1E657A3C00CAB76F /* AppDelegate.swift in Sources */,
 				93A973EF1E657BDA00CAB76F /* ThirdViewController.swift in Sources */,
 				93A973DD1E657A3C00CAB76F /* FirstViewController.swift in Sources */,
@@ -313,6 +317,7 @@
 				93A973ED1E657A3C00CAB76F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
