@@ -87,7 +87,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" indicatorStyle="white" keyboardDismissMode="interactive" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mvb-My-h2U">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" indicatorStyle="white" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mvb-My-h2U">
                                 <rect key="frame" x="16" y="260" width="343" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.9795880305039788" green="0.9795880305039788" blue="0.9795880305039788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -139,6 +139,9 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="ofp-2U-RA9"/>
                                     <barButtonItem systemItem="save" id="igT-3Y-vTp">
                                         <color key="tintColor" red="1" green="0.56391811370849609" blue="0.43920338153839111" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="A8P-xh-TA6" kind="unwind" unwindAction="unwindSegue:" id="Jck-39-y77"/>
+                                        </connections>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
@@ -157,9 +160,12 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="dateLabel" destination="PBd-3M-m3h" id="eJu-mf-G6m"/>
+                        <outlet property="text1" destination="mvb-My-h2U" id="c3F-lW-vdx"/>
+                        <outlet property="text2" destination="xdA-uQ-c5m" id="jXQ-JZ-9Gv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4b5-lL-fXk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="A8P-xh-TA6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2866.4000000000001" y="-677.81109445277366"/>
         </scene>
