@@ -42,8 +42,6 @@ class moodViewController: UIViewController {
         dateArray = dates
         moodArray = data
         
-        //self.navigationItem.title = dateStr
-        
         // Do any additional setup after loading the view.
     }
     
@@ -61,7 +59,7 @@ class moodViewController: UIViewController {
     }
     
     @IBAction func changeMoodSlider(_ sender: UISlider) {
-        moodNum = Int(sender.value) //float
+        moodNum = Int(sender.value)
         moodLabel.text = String(moodNum)
         if (moodNum < 3) {
             moodImage.image = UIImage(named:"1")

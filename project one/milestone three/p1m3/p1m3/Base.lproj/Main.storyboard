@@ -114,7 +114,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="ijf-5J-EfT">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="B0u-Lj-YAR">
-                            <color key="tintColor" red="0.83921568627450982" green="0.396078431372549" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" red="1" green="0.74117647058823533" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="doneEditingBody" destination="Tu2-rh-9GQ" id="8s1-M3-Num"/>
                             </connections>
@@ -169,7 +169,7 @@
                                 <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qml-TO-P3I">
                                     <rect key="frame" x="317" y="67" width="50" height="30"/>
                                     <state key="normal" title="Add">
-                                        <color key="titleColor" red="0.83921568627450982" green="0.396078431372549" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleColor" red="1" green="0.74117647058823533" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
                                     <connections>
                                         <action selector="addGoal:" destination="cxy-c7-fQY" eventType="touchUpInside" id="EXZ-Iy-PM0"/>
@@ -204,7 +204,7 @@
                             <outlet property="delegate" destination="cxy-c7-fQY" id="aGw-55-xuO"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Goals" image="first" id="j8U-xn-kZc"/>
+                    <tabBarItem key="tabBarItem" title="Goals" image="13" selectedImage="13" id="j8U-xn-kZc"/>
                     <connections>
                         <outlet property="goalText" destination="8gb-xx-9Hy" id="Ya1-ii-NmO"/>
                     </connections>
@@ -290,7 +290,7 @@
                                     </imageView>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="7" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="r0i-57-lt5">
                                         <rect key="frame" x="-2" y="250" width="294" height="31"/>
-                                        <color key="tintColor" red="0.83921568627450982" green="0.396078431372549" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="1" green="0.74239245756172845" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="290" id="lge-rh-aP4"/>
                                         </constraints>
@@ -319,7 +319,7 @@
                                             <constraint firstAttribute="height" constant="43" id="AhE-70-YRk"/>
                                         </constraints>
                                         <state key="normal" title="Save">
-                                            <color key="titleColor" red="0.83921568627450982" green="0.396078431372549" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="1" green="0.74117647058823533" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="addMoodButton:" destination="YGq-MD-OKk" eventType="touchUpInside" id="iNi-g3-Yif"/>
@@ -337,7 +337,7 @@
                             <constraint firstAttribute="trailing" secondItem="LPj-tH-Iq1" secondAttribute="trailing" id="xqA-wO-ASc"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Mood" image="second" id="Tn1-AD-HHP"/>
+                    <tabBarItem key="tabBarItem" title="Mood" image="14" selectedImage="14" id="Tn1-AD-HHP"/>
                     <connections>
                         <outlet property="moodImage" destination="YjE-BV-hFb" id="Zwk-0s-jk7"/>
                         <outlet property="moodLabel" destination="Pu4-d6-vPh" id="du6-Iu-mdM"/>
@@ -356,7 +356,8 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="0.74117647058823533" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="0.74117647058823533" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="ufw-4g-pn9" kind="relationship" relationship="viewControllers" id="MLR-Xc-vat"/>
@@ -383,6 +384,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgb" translatesAutoresizingMaskIntoConstraints="NO" id="5Tf-TX-qSB">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="tintColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lCe-ng-fIB">
                                 <rect key="frame" x="16" y="72" width="343" height="546"/>
@@ -422,7 +424,7 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0Q-Tp-BNa">
                                         <rect key="frame" x="84" y="178" width="176" height="42"/>
-                                        <color key="backgroundColor" red="0.83921568627450982" green="0.396078431372549" blue="0.3529411764705882" alpha="0.10931508819018405" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.40000000000000002" alpha="0.10931508819018405" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="znu-JF-eCT"/>
                                         </constraints>
@@ -505,7 +507,7 @@
                             <constraint firstItem="5Tf-TX-qSB" firstAttribute="leading" secondItem="wbB-qW-sCF" secondAttribute="leading" id="vpD-hX-3fL"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="You" image="first" id="UwL-X2-3re"/>
+                    <tabBarItem key="tabBarItem" title="You" image="11" selectedImage="11" id="UwL-X2-3re"/>
                     <connections>
                         <outlet property="infoLabel" destination="Pv3-ld-1W8" id="Ddx-8X-dv0"/>
                         <outlet property="lineGraph" destination="Aj7-6e-rcm" id="A4S-rf-2nN"/>
@@ -603,7 +605,7 @@
         <scene sceneID="c7H-lk-tmw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tSt-8G-WRN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Notes" image="second" id="0le-0Y-Xti"/>
+                    <tabBarItem key="tabBarItem" title="Notes" image="12" selectedImage="12" id="0le-0Y-Xti"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jVi-Lp-Pe2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -620,10 +622,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="11" width="30" height="30"/>
+        <image name="12" width="30" height="30"/>
+        <image name="13" width="30" height="30"/>
+        <image name="14" width="30" height="30"/>
         <image name="4" width="250" height="250"/>
         <image name="bgb" width="6012" height="2832"/>
         <image name="default" width="400" height="400"/>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
     </resources>
 </document>

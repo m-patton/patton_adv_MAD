@@ -2,12 +2,13 @@
 //  mainViewController.swift
 //  p1m3
 //
-//  Created by Mae Patton on 3/13/17.
+//  Created by Mae Patton on 3/12/17.
 //  Copyright © 2017 Mae Patton. All rights reserved.
 //
 
 import UIKit
 import JBChart
+//CHART STUFF FROM JawBone's github
 
 class mainViewController: UIViewController, JBLineChartViewDataSource, JBLineChartViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
@@ -16,6 +17,7 @@ class mainViewController: UIViewController, JBLineChartViewDataSource, JBLineCha
     @IBOutlet weak var userImage: UIImageView!
     
     @IBOutlet weak var nameLabel: UILabel!
+    //learned how to do this from The Swift Guy's youtube video
     @IBAction func importImage(_ sender: Any) {
         let image = UIImagePickerController()
         image.delegate = self
@@ -38,8 +40,6 @@ class mainViewController: UIViewController, JBLineChartViewDataSource, JBLineCha
     }
     
     @IBOutlet weak var infoLabel: UILabel!
-    //var chartLeg = ["first", "2", "3", "4", "5", "hi", "7", "8", "9", "end"]
-    //var chartData = [3,6,2,3,8,2,4, 6, 8, 3]
     var chartLegs = ["0","0","0","0","0","0","0"]//= [String]()
     var chartDatas = [0,0,0,0,0,0,0]//[Int]()
     var chartLegFull = [String]()
@@ -75,6 +75,7 @@ class mainViewController: UIViewController, JBLineChartViewDataSource, JBLineCha
         }
         chartLegFull = dates
         chartDataFull = data
+        //get last part of array or all of array if less than seven entries
         var size = Int(chartLegFull.count)
         size = size - 1
         chartLegFull = chartLegFull.reversed()
@@ -101,10 +102,9 @@ class mainViewController: UIViewController, JBLineChartViewDataSource, JBLineCha
         
         if let name = UserDefaults.standard.string(forKey: "name")
         {
-            //UserDefaults.standard.set(nameLabel.text!, forKey: "name")
             nameLabel.text = "Hello, " + name
         }else {
-            nameLabel.text = "Add Name"
+            nameLabel.text = "Add Name" //if the user hasnt added thair name yet
         }
 
         
@@ -117,6 +117,8 @@ class mainViewController: UIViewController, JBLineChartViewDataSource, JBLineCha
         }
         chartLegFull = dates
         chartDataFull = data
+        
+        //SO i need the array to only be the last seven elements added... there has to be a better way to do this
         var size = Int(chartLegFull.count)
         size = size - 1
         chartLegFull = chartLegFull.reversed()
@@ -161,7 +163,7 @@ class mainViewController: UIViewController, JBLineChartViewDataSource, JBLineCha
         var rightAx = UILabel(frame: CGRect(x: lineGraph.frame.width/2 - 8, y: 0, width: lineGraph.frame.width/2 - 8, height: 16))
         rightAx.textColor = UIColor.black
         rightAx.font = UIFont(name: "Avenir", size: 12)
-        //I WANT IT TO GO TO THE 7TH ELEMENT
+        //I WANT IT TO GET THE LAST SEVEN ELEMENTS
         if chartLegs.count > 0 {
             rightAx.text = "\(chartLegs[chartLegs.count - 1])"
         }else{
@@ -174,24 +176,13 @@ class mainViewController: UIViewController, JBLineChartViewDataSource, JBLineCha
         
         var header = UILabel(frame: CGRect(x: 0, y: 0, width: lineGraph.frame.width, height: 50))
         header.textColor = UIColor.black
-        //header.font = UIFont.systemFont(ofSize: 18)
         header.font = UIFont(name: "Avenir", size: 18)
-        //UIFont.systemFont(ofType: Avenir)
         header.text = "Mood Entries"
         header.textAlignment = NSTextAlignment.center
-        
         lineGraph.footerView = footerView
         lineGraph.headerView = header
     }
-    /*
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        // our code
-        lineGraph.reloadData()
-        
-        var timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(mainViewController.showChart), userInfo: nil, repeats: false)
-    }*/
+
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
@@ -222,54 +213,37 @@ class mainViewController: UIViewController, JBLineChartViewDataSource, JBLineCha
         }else{
             return 7
         }
-        
-        /*
-        if (lineIndex == 0) {
-            return UInt(chartData.count)
-        } else if (lineIndex == 1) {
-            return UInt(lastYearChartData.count)
-        }*/
-        
-        return 0
     }
     
     func lineChartView(_ lineChartView: JBLineChartView!, verticalValueForHorizontalIndex horizontalIndex: UInt, atLineIndex lineIndex: UInt) -> CGFloat {
         
         return CGFloat(chartDatas[Int(horizontalIndex)])
-        /*
-        if (lineIndex == 0) {
-            return CGFloat(chartData[Int(horizontalIndex)])
-        } else if (lineIndex == 1) {
-            return CGFloat(lastYearChartData[Int(horizontalIndex)])
-        }*/
-        
-        return 0
     }
-    
+    //THIS IS THE LINE COLOR OF THE CHART
     func lineChartView(_ lineChartView: JBLineChartView!, colorForLineAtLineIndex lineIndex: UInt) -> UIColor! {
         if (lineIndex == 0) {
-            return UIColor.white //this is the line with dots
+            return UIColor.white //this will have dots
         } else if (lineIndex == 1) {
-            return UIColor(red:214/250,green:101/250,blue:90/250,alpha:1) //this has no dots
+            return UIColor(red: 255/255, green: 189/255, blue: 102/255, alpha: 1) //this will have no dots
         }
         
         return UIColor.white
     }
-    
+    //THIS FUNCTION ALLOWS DOTS TO BE SHOWN
     func lineChartView(_ lineChartView: JBLineChartView!, showsDotsForLineAtLineIndex lineIndex: UInt) -> Bool {
         if (lineIndex == 0) { return true }
         else if (lineIndex == 1) { return false }
         
         return false
     }
-    
+    //COLOR OF THE DOT
     func lineChartView(_ lineChartView: JBLineChartView!, colorForDotAtHorizontalIndex horizontalIndex: UInt, atLineIndex lineIndex: UInt) -> UIColor! {
         return UIColor(red:250/250, green: 250/250, blue: 250/250, alpha: 7/10)
     }
-    
+    //THIS CHANGES LINES FROM JAGGED TO CURVED
     func lineChartView(_ lineChartView: JBLineChartView!, smoothLineAtLineIndex lineIndex: UInt) -> Bool {
-        if (lineIndex == 0) { return true }
-        else if (lineIndex == 1) { return true }
+        if (lineIndex == 0) { return false }
+        else if (lineIndex == 1) { return false }
         
         return true
     }
@@ -279,26 +253,16 @@ class mainViewController: UIViewController, JBLineChartViewDataSource, JBLineCha
         let data = chartDatas[Int(horizontalIndex)]
         let key = chartLegs[Int(horizontalIndex)]
         infoLabel.text = "Mood on \(key): \(data)"
-        /*
-        if (lineIndex == 0) {
-            let data = chartData[Int(horizontalIndex)]
-            let key = chartLeg[Int(horizontalIndex)]
-            //informationLabel.text = "Weather on \(key): \(data)"
-        } else if (lineIndex == 1) {
-            let data = lastYearChartData[Int(horizontalIndex)]
-            let key = chartLeg[Int(horizontalIndex)]
-            //informationLabel.text = "Weather last year on \(key): \(data)"
-        }*/
     }
     
     func didDeselectLine(in lineChartView: JBLineChartView!) {
         infoLabel.text = ""
     }
-    
+    //FILL IN PARTS OF GRAPH BELOW LINE WITH COLOR
     func lineChartView(_ lineChartView: JBLineChartView!, fillColorForLineAtLineIndex lineIndex: UInt) -> UIColor! {
         
         if (lineIndex == 1) {
-            return UIColor(red:214/250,green:101/250,blue:90/250,alpha:7/10) //THIS IS THE FILL COLOR BELOW
+            return UIColor(red: 255/255, green: 189/255, blue: 102/255, alpha: 2/10) //THIS IS THE FILL COLOR BELOW
         }
         
         return UIColor.clear

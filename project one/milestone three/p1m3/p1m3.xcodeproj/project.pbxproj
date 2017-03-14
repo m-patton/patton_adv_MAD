@@ -221,9 +221,9 @@
 		933E5F361E75AC5C00AA48E1 /* p1m3 */ = {
 			isa = PBXGroup;
 			children = (
-				934F9EB21E77DC7D0076EACD /* namePopViewController.swift */,
 				933E5F371E75AC5C00AA48E1 /* AppDelegate.swift */,
 				933E5FC91E773DEA00AA48E1 /* mainViewController.swift */,
+				934F9EB21E77DC7D0076EACD /* namePopViewController.swift */,
 				933E5F671E75B0EC00AA48E1 /* TableViewController.swift */,
 				933E5F691E75B84D00AA48E1 /* NotesViewController.swift */,
 				933E5F6B1E7712DC00AA48E1 /* GoalsTableViewController.swift */,

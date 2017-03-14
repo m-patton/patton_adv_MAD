@@ -24,9 +24,9 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSU-KT-wLm">
                                 <rect key="frame" x="16" y="178" width="338" height="211"/>
                                 <attributedString key="attributedText">
-                                    <fragment content=". . .">
+                                    <fragment content="Peak&amp;Pit">
                                         <attributes>
-                                            <font key="NSFont" size="144" name="AvenirNext-UltraLight"/>
+                                            <font key="NSFont" size="36" name="AvenirNext-UltraLight"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>

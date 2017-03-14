@@ -2,7 +2,7 @@
 //  GoalsTableViewController.swift
 //  p1m3
 //
-//  Created by Mae Patton on 3/13/17.
+//  Created by Mae Patton on 3/12/17.
 //  Copyright © 2017 Mae Patton. All rights reserved.
 //
 
@@ -71,11 +71,8 @@ class GoalsTableViewController: UITableViewController, UITextFieldDelegate {
         return goalsArr.count
     }
     
-    /*override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        if let cell = tableView.cellForRow(at: indexPath) {
-            cell.accessoryType = .none
-        }
-    }*/
+    //help with checkmarks stackoverflow.com/questions/30059704/uitableviewcell-checkmark-to-be-toggled-on-and-off-when-tapped-swift
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)//this is so selected fades out
         if let cell = tableView.cellForRow(at: indexPath) {
@@ -83,6 +80,7 @@ class GoalsTableViewController: UITableViewController, UITextFieldDelegate {
                 cell.accessoryType = .checkmark
                 cell.textLabel?.textColor = UIColor(red: 214/255, green: 101/255, blue: 90/255, alpha: 1)
                 //UserDefaults.standard.set(cell.accessoryType, forKey: "check")
+                //how do you save the accessory in userdefaults...?
                 
             }else{
                 cell.accessoryType = .none
@@ -97,14 +95,6 @@ class GoalsTableViewController: UITableViewController, UITextFieldDelegate {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        /*
-        if (some condition to initially checkmark a row){
-            cell.accessoryType = .Checkmark
-            tableView.selectRowAtIndexPath(indexPath, animated: false, scrollPosition: UITableViewScrollPosition.Bottom)
-        } else {
-            cell.accessoryType = .None
-        }*/
-    
         cell.textLabel!.text = goalsArr[indexPath.row]
 
 
