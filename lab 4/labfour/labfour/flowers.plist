@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>flowers</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Rosa</string>
+			<key>url</key>
+			<string>https://en.wikipedia.org/wiki/Rose</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Tulips</string>
+			<key>url</key>
+			<string>https://en.wikipedia.org/wiki/Tulip</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Helianthus</string>
+			<key>url</key>
+			<string>https://en.wikipedia.org/wiki/Helianthus</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Lilium</string>
+			<key>url</key>
+			<string>https://en.wikipedia.org/wiki/Lilium</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Poinsettias</string>
+			<key>url</key>
+			<string>https://en.wikipedia.org/wiki/Poinsettia</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Orchids</string>
+			<key>url</key>
+			<string>https://en.wikipedia.org/wiki/Orchidaceae</string>
+		</dict>
+	</array>
+</dict>
+</plist>
