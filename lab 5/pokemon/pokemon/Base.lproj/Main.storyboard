@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="pokemon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dLZ-TM-hkm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="150" id="Tfb-bR-Lqo" customClass="TableViewCell" customModule="pokemon" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tfb-bR-Lqo" id="nsc-MF-q3A">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yij-3D-IW3">
+                                                    <rect key="frame" x="23" y="0.0" width="141" height="141"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="141" id="QQF-8q-G1g"/>
+                                                        <constraint firstAttribute="height" constant="141" id="jX5-NL-SrR"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hF4-nF-dOu">
+                                                    <rect key="frame" x="172" y="34" width="109" height="81"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yTN-nC-oT0">
+                                                            <rect key="frame" x="0.0" y="0.0" width="109" height="33"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OyS-FU-zdQ">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="63" height="33"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="63" id="2WO-T4-Rzh"/>
+                                                                        <constraint firstAttribute="height" constant="33" id="wBz-aY-Yf0"/>
+                                                                    </constraints>
+                                                                    <attributedString key="attributedText">
+                                                                        <fragment content="Name:">
+                                                                            <attributes>
+                                                                                <font key="NSFont" size="16" name="Avenir-Medium"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQe-Pd-LoR">
+                                                                    <rect key="frame" x="63" y="0.0" width="46" height="33"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="33" id="7e1-hd-FpP"/>
+                                                                    </constraints>
+                                                                    <attributedString key="attributedText">
+                                                                        <fragment content="Name">
+                                                                            <attributes>
+                                                                                <font key="NSFont" size="16" name="Avenir-Light"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fCo-AN-Qu3">
+                                                            <rect key="frame" x="0.0" y="48" width="109" height="33"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrb-bX-uyx">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="63" height="33"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="63" id="8LF-4e-NUG"/>
+                                                                        <constraint firstAttribute="height" constant="33" id="gyI-u3-9oZ"/>
+                                                                    </constraints>
+                                                                    <attributedString key="attributedText">
+                                                                        <fragment content="Candy:">
+                                                                            <attributes>
+                                                                                <font key="NSFont" size="16" name="Avenir-Medium"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdD-E0-7lU">
+                                                                    <rect key="frame" x="63" y="0.0" width="46" height="33"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="33" id="0iP-iJ-oy7"/>
+                                                                    </constraints>
+                                                                    <attributedString key="attributedText">
+                                                                        <fragment content="Candy">
+                                                                            <attributes>
+                                                                                <font key="NSFont" size="16" name="Avenir-Light"/>
+                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                            </attributes>
+                                                                        </fragment>
+                                                                    </attributedString>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Yij-3D-IW3" firstAttribute="top" secondItem="nsc-MF-q3A" secondAttribute="top" constant="8" id="2Y3-hJ-3p7"/>
+                                                <constraint firstItem="hF4-nF-dOu" firstAttribute="centerY" secondItem="nsc-MF-q3A" secondAttribute="centerY" id="7xk-qW-PhT"/>
+                                                <constraint firstItem="hF4-nF-dOu" firstAttribute="leading" secondItem="Yij-3D-IW3" secondAttribute="trailing" constant="7" id="deU-l5-XVu"/>
+                                                <constraint firstItem="Yij-3D-IW3" firstAttribute="leading" secondItem="nsc-MF-q3A" secondAttribute="leading" constant="8" id="hyj-ae-3UI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="mQe-Pd-LoR" id="fig-H8-ycu"/>
+                                            <outlet property="pokeImage" destination="Yij-3D-IW3" id="JLA-oo-edZ"/>
+                                            <outlet property="typeLabel" destination="gdD-E0-7lU" id="rtz-ZI-5Y7"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="rjy-zz-Inc"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="gGl-Aw-oQG"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dLZ-TM-hkm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7W4-7X-cpK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dLZ-TM-hkm" secondAttribute="bottom" id="HFV-61-rh5"/>
+                            <constraint firstItem="dLZ-TM-hkm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bvs-w3-Sh4"/>
+                            <constraint firstAttribute="trailing" secondItem="dLZ-TM-hkm" secondAttribute="trailing" id="iYe-TG-eae"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="dLZ-TM-hkm" id="KaH-oi-Y0N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="113.79310344827587"/>
+        </scene>
+    </scenes>
+</document>
