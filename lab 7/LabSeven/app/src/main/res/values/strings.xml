@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LabSeven</string>
+    <string name="motown">Motown Artists</string>
+    <string-array name="artist_names">
+        <item>The Four Tops</item>
+        <item>Marvin Gaye</item>
+        <item>The Temptations</item>
+        <item>Smokey Robinson and The Miracles</item>
+        <item>Stevie Wonder</item>
+        <item>The Supremes</item>
+    </string-array>
+    <string name="album_image">Album Image</string>
+    <string name="create_order">Order</string>
+
+</resources>
