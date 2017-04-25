@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">project two</string>
+    <string name="butt1">Mind</string>
+    <string name="butt2">Body</string>
+    <string name="butt3">Spirit</string>
+    <string name="hello">Hello</string>
+    <string name="greet">What Would You Like To Focus On?</string>
+    <string name="title_activity_mind">MindActivity</string>
+    <string name="title_1">Today</string>
+    <string name="title_2">Data</string>
+    <string name="title_3">Tips</string>
+
+    <string name="data">View Your Data</string>
+    <string name="tips">View Tips</string>
+
+    <string name="mind">How have you been feeling?</string>
+    <string name="stressed">Stressed</string>
+    <string name="angry">Angry</string>
+    <string name="happy">Happy</string>
+    <string name="blah">Blah</string>
+    <string name="nervous">Nervous</string>
+    <string name="fine">Fine</string>
+    <string name="sad">Sad</string>
+    <string name="fab">Fabulous</string>
+    <string name="irr">Irritable</string>
+
+    <string name="body">What was your day like?</string>
+    <string name="b1">Ate Healthy</string>
+    <string name="b2">Ate Junk</string>
+    <string name="b3">Headache</string>
+    <string name="b4">Slept Well</string>
+    <string name="b5">Slept Poorly</string>
+    <string name="b6">Felt Fatigued</string>
+    <string name="b7">Exercised</string>
+    <string name="b8">Lounged</string>
+    <string name="b9">Felt Sick</string>
+
+    <string name="spirit">Which of these have you done today?</string>
+    <string name="s1">Yoga</string>
+    <string name="s2">Meditation</string>
+    <string name="s3">Deep Breathing</string>
+    <string name="s4">Light Exercise</string>
+    <string name="s5">Positive Thoughts</string>
+    <string name="s6">Negative Thoughts</string>
+    <string name="s7">Went Outside</string>
+    <string name="s8">Relaxation Time</string>
+    <string name="s9">Simplified Space</string>
+</resources>

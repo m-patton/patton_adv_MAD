@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="atlas.p2m3.MindActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/mind"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.047"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="89dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginStart="6dp"
+            android:orientation="horizontal"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1">
+
+            <ToggleButton
+                android:id="@+id/tmb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34dp"
+                android:background="@drawable/round_button"
+                android:checked="true"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="changeButton"
+                android:text="@string/happy"
+                android:textColor="@color/juswhite"
+                android:textOff="@string/happy"
+                android:textOn="@string/happy"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:layout_editor_absoluteY="117dp" />
+
+            <ToggleButton
+                android:id="@+id/tmb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/round_button"
+                android:checked="true"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="changeButton"
+                android:text="@string/fine"
+                android:textColor="@color/juswhite"
+                android:textOff="@string/fine"
+                android:textOn="@string/fine"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:layout_editor_absoluteY="117dp" />
+
+            <ToggleButton
+                android:id="@+id/tmb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="34dp"
+                android:background="@drawable/round_button"
+                android:checked="true"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="changeButton"
+                android:text="@string/fab"
+                android:textColor="@color/juswhite"
+                android:textOff="@string/fab"
+                android:textOn="@string/fab"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:layout_editor_absoluteY="117dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout12"
+            android:layout_width="wrap_content"
+            android:layout_height="89dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginStart="6dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            app:layout_constraintHorizontal_bias="0.642"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1">
+
+
+            <ToggleButton
+                android:id="@+id/tmb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34dp"
+                android:background="@drawable/round_button"
+                android:checked="true"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="changeButton"
+                android:text="@string/stressed"
+                android:textColor="@color/juswhite"
+                android:textOff="@string/stressed"
+                android:textOn="@string/stressed"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:layout_editor_absoluteY="117dp" />
+
+            <ToggleButton
+                android:id="@+id/tmb5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/round_button"
+                android:checked="true"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="changeButton"
+                android:text="@string/sad"
+                android:textColor="@color/juswhite"
+                android:textOff="@string/sad"
+                android:textOn="@string/sad"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:layout_editor_absoluteY="117dp" />
+
+            <ToggleButton
+                android:id="@+id/tmb6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="34dp"
+                android:background="@drawable/round_button"
+                android:checked="true"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="changeButton"
+                android:text="@string/nervous"
+                android:textColor="@color/juswhite"
+                android:textOff="@string/nervous"
+                android:textOn="@string/nervous"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:layout_editor_absoluteY="117dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout13"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="89dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginStart="6dp"
+            android:orientation="horizontal"
+            app:layout_constraintHorizontal_bias="0.642"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1">
+
+
+            <ToggleButton
+                android:id="@+id/tmb7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34dp"
+                android:background="@drawable/round_button"
+                android:checked="true"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="changeButton"
+                android:text="@string/blah"
+                android:textColor="@color/juswhite"
+                android:textOff="@string/blah"
+                android:textOn="@string/blah"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:layout_editor_absoluteY="117dp" />
+
+            <ToggleButton
+                android:id="@+id/tmb8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/round_button"
+                android:checked="true"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="changeButton"
+                android:text="@string/angry"
+                android:textColor="@color/juswhite"
+                android:textOff="@string/angry"
+                android:textOn="@string/angry"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:layout_editor_absoluteY="117dp" />
+
+            <ToggleButton
+                android:id="@+id/tmb9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="34dp"
+                android:background="@drawable/round_button"
+                android:checked="true"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="changeButton"
+                android:text="@string/irr"
+                android:textColor="@color/juswhite"
+                android:textOff="@string/irr"
+                android:textOn="@string/irr"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:layout_editor_absoluteY="117dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/saveButton"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Save"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="347dp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="4dp"
+        android:id="@+id/linearLayout2"
+        app:layout_constraintHorizontal_bias="0.501">
+
+
+        <Button
+            android:id="@+id/buttontip"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/accent2"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/tips"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:text="@string/tips" />
+
+        <Button
+            android:id="@+id/buttondata"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/accent3"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/data"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttontip"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1"
+            tools:text="@string/data" />
+    </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
