@@ -21,6 +21,8 @@ class TableViewController: UITableViewController, NoteViewDelegate {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        ///USER DEFAULTS
+        ///this is where you load the saved information in... if it exists
         let userDefaults = UserDefaults.standard
         guard let data = userDefaults.array(forKey: "notes") as? [[String:String]] else {
             return
@@ -94,7 +96,8 @@ class TableViewController: UITableViewController, NoteViewDelegate {
     }
     
     func saveNotesArray() {
-        
+        ///USER DEFAULTS
+        ///This is where you save the information
         UserDefaults.standard.set(arrNotes, forKey: "notes")
         UserDefaults.standard.synchronize()
     }

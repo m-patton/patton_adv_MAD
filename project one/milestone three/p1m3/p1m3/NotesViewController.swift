@@ -14,18 +14,18 @@ protocol NoteViewDelegate {
     func didUpdateNoteWithTitle(newTitle : String, newBody : String, newBody2: String)
 }
 class NotesViewController: UIViewController, UITextViewDelegate {
-    var delegate : NoteViewDelegate?
+    var delegate : NoteViewDelegate? ///do this
     
     @IBOutlet weak var doneButton: UIBarButtonItem!
-    @IBOutlet weak var txtBody : UITextView!
-    @IBOutlet weak var txtBody2 : UITextView!
+    @IBOutlet weak var txtBody : UITextView! ///this is the first text view
+    @IBOutlet weak var txtBody2 : UITextView! /// you dont need this
     
-    var strBodyText : String!
+    var strBodyText : String! ///this is the actual text
     var strBodyText2 : String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.txtBody.text = self.strBodyText //first text view
+        self.txtBody.text = self.strBodyText ///first text view
         self.txtBody2.text = self.strBodyText2 //second text view
         
         self.txtBody.delegate = self
@@ -36,18 +36,16 @@ class NotesViewController: UIViewController, UITextViewDelegate {
     }
     
     @IBAction func doneEditingBody() {
-        
-        //hides the keyboard
-        self.txtBody.resignFirstResponder()
+        self.txtBody.resignFirstResponder() ///this is to get rid of the keyboard yay
         self.txtBody2.resignFirstResponder()
-        self.doneButton.tintColor = UIColor.clear
+        self.doneButton.tintColor = UIColor.clear ///ignore this shit
         
         if self.delegate != nil {
-            //i only want to change the body not the title...
             self.delegate!.didUpdateNoteWithTitle(newTitle: self.navigationItem.title!, newBody: self.txtBody.text, newBody2: self.txtBody2.text)
         }
     }
     
+    ///THIS IS IMPORTANT
     override func viewWillDisappear(_ animated: Bool) {
         
         super.viewWillDisappear(animated)
@@ -59,10 +57,11 @@ class NotesViewController: UIViewController, UITextViewDelegate {
     /*
     func textViewDidBeginEditing(textView: UITextView) {
         
-        print("text view: ", textView.text)
+        print("yay")
     }*/
 
-    
+    /// You don't really need this... this is so that when you press return on the keyboard it goes away
+    /// but text views use return to go to the next line which can be useful
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         if(text == "\n") { //hmmm i dont know if i want this to happen or nah
             textView.resignFirstResponder()
