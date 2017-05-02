@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PattonExam</string>
+    <string name="activity">Activity</string>
+    <string-array name="activity_types">
+        <item>Indoor</item>
+        <item>Outdoor</item>
+    </string-array>
+    <string name="activity_image">Bulb picture</string>
+    <string name="create_order">Order</string>
+    <string name="add_act_hint">Hero name</string>
+    <string name="adddialog_title">Add Hero</string>
+</resources>
