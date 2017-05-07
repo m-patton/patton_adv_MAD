@@ -1,0 +1,6 @@
+framework module Pods_JBChartTests {
+  umbrella header "Pods-JBChartTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
