@@ -33,18 +33,7 @@ class TableViewController: UITableViewController, NoteViewDelegate {
         arrNotes = data //these are my saved notes
         tableView.reloadData()
     }
-    /*
-    func didUpdateNoteWithTitle(newTitle: String, newBody: String, newBody2: String) {
         
-        //this is how i will update that specific note
-        self.arrNotes[self.selectedIndex]["title"] = newTitle //title
-        self.arrNotes[self.selectedIndex]["body"] = newBody //peak
-        self.arrNotes[self.selectedIndex]["body2"] = newBody2 //pit
-        
-        self.tableView.reloadData()
-        saveNotesArray()
-    }*/
-    
     func didUpdateNoteWithTitle2(newTitle: String, newBody: String, newBody2: String, newImage: NSData) {
         
         //this is how i will update that specific note

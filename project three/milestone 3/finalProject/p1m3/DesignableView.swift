@@ -21,6 +21,7 @@ import UIKit
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {
             self.layer.cornerRadius = cornerRadius
+            //This is because I want to round the corners of the table view cell views
         }
     }
 

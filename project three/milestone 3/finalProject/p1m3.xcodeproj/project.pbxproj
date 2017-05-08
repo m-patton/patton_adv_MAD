@@ -17,7 +17,6 @@
 		933E5F5A1E75AC5C00AA48E1 /* p1m3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933E5F591E75AC5C00AA48E1 /* p1m3UITests.swift */; };
 		933E5F681E75B0EC00AA48E1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933E5F671E75B0EC00AA48E1 /* TableViewController.swift */; };
 		933E5F6A1E75B84D00AA48E1 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933E5F691E75B84D00AA48E1 /* NotesViewController.swift */; };
-		933E5F6C1E7712DC00AA48E1 /* GoalsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933E5F6B1E7712DC00AA48E1 /* GoalsTableViewController.swift */; };
 		933E5F7B1E773C7000AA48E1 /* JBChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933E5F721E773C6F00AA48E1 /* JBChart.framework */; };
 		933E5F821E773C7000AA48E1 /* JBChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 933E5F811E773C7000AA48E1 /* JBChartTests.m */; };
 		933E5F841E773C7000AA48E1 /* JBChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 933E5F741E773C7000AA48E1 /* JBChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -49,13 +48,13 @@
 		933E5FC81E773D0700AA48E1 /* JBLineChartLinesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 933E5FB01E773D0700AA48E1 /* JBLineChartLinesView.m */; };
 		933E5FCA1E773DEA00AA48E1 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933E5FC91E773DEA00AA48E1 /* mainViewController.swift */; };
 		933E5FCC1E77646D00AA48E1 /* moodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933E5FCB1E77646D00AA48E1 /* moodViewController.swift */; };
-		934F9EB31E77DC7D0076EACD /* namePopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934F9EB21E77DC7D0076EACD /* namePopViewController.swift */; };
 		936F8BBD1EBED79E00CAEE94 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936F8BBC1EBED79E00CAEE94 /* UserViewController.swift */; };
 		936F8BC11EBEFD3100CAEE94 /* CommTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936F8BC01EBEFD3100CAEE94 /* CommTableViewController.swift */; };
 		936F8BC31EBEFFB000CAEE94 /* CommTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936F8BC21EBEFFB000CAEE94 /* CommTableViewCell.swift */; };
 		936F8BC51EBF09F100CAEE94 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936F8BC41EBF09F100CAEE94 /* Post.swift */; };
 		936F8BC71EBF123400CAEE94 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 936F8BC61EBF123400CAEE94 /* GoogleService-Info.plist */; };
 		936F8BCA1EBFC87500CAEE94 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936F8BC91EBFC87500CAEE94 /* DesignableView.swift */; };
+		93C8358D1EC10E7C00550214 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C8358C1EC10E7C00550214 /* AppUtility.swift */; };
 		CC5054367C2262E0F62152EC /* Pods_JBChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790D541BD0FBF6A609DFB1E5 /* Pods_JBChart.framework */; };
 		FB05258E084079325B47332F /* Pods_p1m3Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE21526766D7E741A0852E9E /* Pods_p1m3Tests.framework */; };
 		FD1B6A19CAE8434E66986194 /* Pods_p1m3UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE212AAB00930D0ED7CDF6B /* Pods_p1m3UITests.framework */; };
@@ -138,7 +137,6 @@
 		933E5F5B1E75AC5C00AA48E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		933E5F671E75B0EC00AA48E1 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		933E5F691E75B84D00AA48E1 /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
-		933E5F6B1E7712DC00AA48E1 /* GoalsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsTableViewController.swift; sourceTree = "<group>"; };
 		933E5F721E773C6F00AA48E1 /* JBChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JBChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		933E5F741E773C7000AA48E1 /* JBChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBChart.h; sourceTree = "<group>"; };
 		933E5F751E773C7000AA48E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -171,13 +169,13 @@
 		933E5FB01E773D0700AA48E1 /* JBLineChartLinesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLineChartLinesView.m; sourceTree = "<group>"; };
 		933E5FC91E773DEA00AA48E1 /* mainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
 		933E5FCB1E77646D00AA48E1 /* moodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = moodViewController.swift; sourceTree = "<group>"; };
-		934F9EB21E77DC7D0076EACD /* namePopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = namePopViewController.swift; path = ../namePopViewController.swift; sourceTree = "<group>"; };
 		936F8BBC1EBED79E00CAEE94 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		936F8BC01EBEFD3100CAEE94 /* CommTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommTableViewController.swift; sourceTree = "<group>"; };
 		936F8BC21EBEFFB000CAEE94 /* CommTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommTableViewCell.swift; sourceTree = "<group>"; };
 		936F8BC41EBF09F100CAEE94 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		936F8BC61EBF123400CAEE94 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		936F8BC91EBFC87500CAEE94 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		93C8358C1EC10E7C00550214 /* AppUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 		9CF0FBB991901F5F65AEAB1F /* Pods_p1m3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_p1m3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B94EE349DF9026E802580807 /* Pods-JBChartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JBChartTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JBChartTests/Pods-JBChartTests.release.xcconfig"; sourceTree = "<group>"; };
 		BAE212AAB00930D0ED7CDF6B /* Pods_p1m3UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_p1m3UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -292,11 +290,10 @@
 				936F8BC81EBFC86100CAEE94 /* IBDesignables */,
 				933E5F371E75AC5C00AA48E1 /* AppDelegate.swift */,
 				933E5FC91E773DEA00AA48E1 /* mainViewController.swift */,
+				93C8358C1EC10E7C00550214 /* AppUtility.swift */,
 				936F8BBC1EBED79E00CAEE94 /* UserViewController.swift */,
-				934F9EB21E77DC7D0076EACD /* namePopViewController.swift */,
 				933E5F671E75B0EC00AA48E1 /* TableViewController.swift */,
 				933E5F691E75B84D00AA48E1 /* NotesViewController.swift */,
-				933E5F6B1E7712DC00AA48E1 /* GoalsTableViewController.swift */,
 				933E5FCB1E77646D00AA48E1 /* moodViewController.swift */,
 				936F8BC41EBF09F100CAEE94 /* Post.swift */,
 				936F8BC01EBEFD3100CAEE94 /* CommTableViewController.swift */,
@@ -900,6 +897,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93C8358D1EC10E7C00550214 /* AppUtility.swift in Sources */,
 				933E5F6A1E75B84D00AA48E1 /* NotesViewController.swift in Sources */,
 				936F8BC51EBF09F100CAEE94 /* Post.swift in Sources */,
 				936F8BC31EBEFFB000CAEE94 /* CommTableViewCell.swift in Sources */,
@@ -907,9 +905,7 @@
 				933E5FCC1E77646D00AA48E1 /* moodViewController.swift in Sources */,
 				933E5F381E75AC5C00AA48E1 /* AppDelegate.swift in Sources */,
 				933E5FCA1E773DEA00AA48E1 /* mainViewController.swift in Sources */,
-				934F9EB31E77DC7D0076EACD /* namePopViewController.swift in Sources */,
 				936F8BCA1EBFC87500CAEE94 /* DesignableView.swift in Sources */,
-				933E5F6C1E7712DC00AA48E1 /* GoalsTableViewController.swift in Sources */,
 				936F8BC11EBEFD3100CAEE94 /* CommTableViewController.swift in Sources */,
 				933E5F681E75B0EC00AA48E1 /* TableViewController.swift in Sources */,
 			);

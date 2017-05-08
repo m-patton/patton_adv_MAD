@@ -2,7 +2,7 @@
 //  CommTableViewController.swift
 //  
 //
-//  Created by Mae Patton on 5/7/17.
+//  Created by Mae Patton on 5/5/17.
 //
 //
 
@@ -19,30 +19,12 @@ class CommTableViewController: UITableViewController, UITextFieldDelegate, UITex
     var posts = [Post]()
     
     var userName = ""
-    //var goalsArr = [String]()
     @IBOutlet weak var postField: UITextView!
     
-    var testArr = ["one","two","three"]
-    var testArr2 = ["little thing","here is another","doo doo doooooo"]
-    
-    //var nameArr = [String]()
-    //var postArr = [String]()
 
-    
     @IBAction func savePost(_ sender: Any) {
         self.postField.resignFirstResponder()
-        print("In here")
         
-        /*
-        var newItem = postField.text!
-        var newName = userName
-        testArr2.insert(newItem, at: 0)
-        testArr.insert(newName, at: 0)
-        self.selectedIndex = 0
-        self.tableView.reloadData()
-        saveGoals()
-        postField.text = "Type Post Here"
-        */
         var counting = "\(counter)" //this is the counter as a string
         let newPost = Post(newname: userName, newpost: postField.text!, newid: "post" + counting)
         posts.append(newPost)
@@ -59,8 +41,7 @@ class CommTableViewController: UITableViewController, UITextFieldDelegate, UITex
         
         ref = FIRDatabase.database().reference()
         self.ref.child("count").child("count").setValue(counting)
-
-        //send to fb count =
+        //sending the count to firebase so each post has specific id
         
         
     }
@@ -96,15 +77,10 @@ class CommTableViewController: UITableViewController, UITextFieldDelegate, UITex
         ref.child("count").observeSingleEvent(of: .value, with: { (snapshot) in
             let count = snapshot.value as? NSDictionary
             let county = count?["count"] as? String ?? ""
-            print("count is: ", county)
             self.counter = Int(county)!
             print("got the count: ", self.counter)
             
         })
-        
-        //get from fb
-        //count =
-        print("hi")
         
     }
 
@@ -112,7 +88,6 @@ class CommTableViewController: UITableViewController, UITextFieldDelegate, UITex
     override func viewDidAppear(_ animated: Bool) {
         if let name = UserDefaults.standard.string(forKey: "name")
         {
-            //UserDefaults.standard.set(nameLabel.text!, forKey: "name")
             userName =  name
         }else {
             userName = "User"
@@ -153,26 +128,11 @@ class CommTableViewController: UITableViewController, UITextFieldDelegate, UITex
             print("current index ", indexPath)
             
             let post = posts[indexPath.row]
-            print(post)
             let postref = ref.child("Posts").child(post.postid)
-            print(postref)
+            //each has a unique post id
             postref.ref.removeValue()
             
-            
-            /*
-             let user: [String: AnyObject] = self.names[indexPath.row]
-             let uniqueUserID = user["uniqueUserID"]
-             //get the uniqueUserID
-             let ref = FIRDatabase.database().reference()
-             //remove that user at that uniqueUserID
-             ref.child("Users/\(uniqueUserID)").removeValue()
-             
-             
-            var ref = snapshot.ref();
-            let post = posts[indexPath.row]
-            let postref = ref.parent().name
-            postref.ref.removeValue()
-             */
+            //This works but I should disable it and come up with a different delete method for foum posts...
         }
     }
     

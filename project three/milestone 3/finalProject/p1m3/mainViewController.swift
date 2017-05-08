@@ -13,43 +13,13 @@ import FirebaseDatabase
 
 //CHART STUFF FROM JawBone's github
 
-class mainViewController: UIViewController, JBLineChartViewDataSource, JBLineChartViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class mainViewController: UIViewController, JBLineChartViewDataSource, JBLineChartViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIPageViewControllerDelegate {
 
     @IBOutlet weak var lineGraph: JBLineChartView!
     
     @IBOutlet weak var userImage: UIImageView!
     
     @IBOutlet weak var nameLabel: UILabel!
-    //learned how to do this from The Swift Guy's youtube video
-    /*
-    @IBAction func importImage(_ sender: Any) {
-        let image = UIImagePickerController()
-        image.delegate = self
-        image.sourceType = UIImagePickerControllerSourceType.photoLibrary //can also say camera
-        image.allowsEditing = false
-        self.present(image, animated: true){
-            //after complete
-        }
-    }
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage{
-            userImage.image = image
-            //encode the image
-            ///SAVE NEW IMAGE
-            let imageData:NSData = UIImagePNGRepresentation(image)! as NSData
-            UserDefaults.standard.set(imageData, forKey: "savedImage")
-            
-            let data = UserDefaults.standard.object(forKey: "savedImage") as! NSData
-            userImage.image=UIImage(data: data as Data)
-            
-            
-        }else{
-            //error
-        }
-        
-        self.dismiss(animated: true, completion: nil)
-    }
-    */
     
     @IBOutlet weak var infoLabel: UILabel!
     var chartLegs = ["0","0","0","0","0","0","0"]//= [String]()
@@ -57,9 +27,16 @@ class mainViewController: UIViewController, JBLineChartViewDataSource, JBLineCha
     var chartLegFull = [String]()
     var chartDataFull = [Int]()
     
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        AppUtility.lockOrientation(.all)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ///SAVE INITIAL IMAGE
+        AppUtility.lockOrientation(.portrait)
         /*
         let imageData:NSData = UIImagePNGRepresentation(userImage.image!)! as NSData
         UserDefaults.standard.set(imageData, forKey: "savedImage")*/
@@ -118,15 +95,21 @@ class mainViewController: UIViewController, JBLineChartViewDataSource, JBLineCha
     }
     
     override func viewDidAppear(_ animated: Bool){
-        ///GET IN IMAGE
         
+        
+        super.viewDidAppear(animated)
+        
+        AppUtility.lockOrientation(.portrait) /// LOCKS SCREEN
+        
+        ///GET IN IMAGE
         if let imgdata = UserDefaults.standard.object(forKey: "savedImage"){
             let imgdata2 = UserDefaults.standard.object(forKey: "savedImage") as! NSData
             userImage.image=UIImage(data: imgdata2 as Data)
         }
         
         
-        super.viewDidAppear(animated)
+       
+        
         if(chartLegFull.count > 0){
         infoLabel.text = "press on the dots to see info"
         }
@@ -178,6 +161,7 @@ class mainViewController: UIViewController, JBLineChartViewDataSource, JBLineCha
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        AppUtility.lockOrientation(.portrait)
         
         var footerView = UIView(frame: CGRect(x: 0, y: 0, width: lineGraph.frame.width, height: 16))
         

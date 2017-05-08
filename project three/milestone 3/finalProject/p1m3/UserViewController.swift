@@ -9,7 +9,7 @@
 import UIKit
 
 class UserViewController: UIViewController, UINavigationControllerDelegate,  UIImagePickerControllerDelegate, UITextFieldDelegate {
-
+    //This is where the user can change their name or profile image
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var profileImage: UIImageView!
     

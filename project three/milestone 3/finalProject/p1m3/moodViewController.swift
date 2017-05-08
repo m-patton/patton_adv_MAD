@@ -50,6 +50,9 @@ class moodViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
+        AppUtility.lockOrientation(.portrait)
+        
         let userDefaults = UserDefaults.standard
         guard let dates = userDefaults.array(forKey: "dates") as? [String] else {
             return
@@ -60,6 +63,13 @@ class moodViewController: UIViewController {
         dateArray = dates
         moodArray = data
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        AppUtility.lockOrientation(.all)
+    }
+    
+
     
     @IBAction func changeMoodSlider(_ sender: UISlider) {
         moodNum = Int(sender.value)
