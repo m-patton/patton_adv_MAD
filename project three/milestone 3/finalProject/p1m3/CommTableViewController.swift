@@ -21,7 +21,15 @@ class CommTableViewController: UITableViewController, UITextFieldDelegate, UITex
     var userName = ""
     @IBOutlet weak var postField: UITextView!
     
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if(text == "\n") {
+            textView.resignFirstResponder()
+            return false
+        }
+        return true
+    }
 
+    
     @IBAction func savePost(_ sender: Any) {
         self.postField.resignFirstResponder()
         
